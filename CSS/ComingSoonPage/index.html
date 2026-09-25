@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming-Soon</title>
+    <style>
+        body,html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.container{
+    background: linear-gradient(180deg,rgb(23, 23, 24),rgb(115, 113, 116));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.content {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(124, 111, 111, 0.9);
+    max-width: 400px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.603);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.logo{
+    width: 170px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.603);
+    object-fit: contain;
+    border-radius: 10px;
+}
+h1{
+    color: rgb(56, 35, 4);
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+p{
+    justify-content: center;
+    color: #302d2d;
+    margin-bottom: 10px;
+    line-height: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input[type="email"]{
+    background-color: #777474;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #0f0f0f;
+    margin-bottom: 10px;
+
+}
+input::placeholder{
+    color: #0f0f0f;
+}
+input:focus {
+    outline: none;
+}
+button{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.603);
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    width: 100px;
+    background-color: #8c2ee4;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #6c24af;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img src="img.jpg" class="logo" alt="Main-Logo">
+            <h1>Coming Soon</h1>
+            <p>We are working hard to bring something awesome. Stay tuned!</p>
+            <form id="notify-form">
+                <input type="email" placeholder="Enter Your Email" required>
+                <button type="submit">Notify Me</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
